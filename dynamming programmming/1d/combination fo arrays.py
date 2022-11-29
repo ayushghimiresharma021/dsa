@@ -15,7 +15,9 @@ def tablecombination(arr,target):
     dp[0] = 1
     for i in range(target+1):
         for j in range(len(arr)):
-            if i-arr[i]>=0:
+            if i-arr[j]>=0:
                 dp[i]+=dp[i-arr[j]]
+
+        
 
 
